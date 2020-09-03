@@ -1,0 +1,6 @@
+opcua
+python-snap7
+freeopcua
+cryptography
+gevent
+openssl

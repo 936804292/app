@@ -4,15 +4,13 @@
 		"DB_Number": "2"
 	},
 	"OPCUA_SERVER": {
-		"EndPoint": "opc.tcp://0.0.0.0:4840",
-        "TagPath": "../config/data1.json",
-		"logPath": "../logs",
+		"EndPoint": "opc.tcp://0.0.0.0:48411",
+        "TagFile": "data0.json",
 		"uri": "http://www.kezhi-electric.com"
 	},
 	"security": {
 		"security_num": "1",
-		"certificate": "../config/security/kz_cert.der",
-		"private-key": "../config/security/kz_private_key.pem"
+		"certificate": "kz_cert.der",
+		"private-key": "kz_private_key.pem"
 	}
-
 }

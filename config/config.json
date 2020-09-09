@@ -1,5 +1,5 @@
 {
-	"S7PLC": {
+	"OPCDA_CLIENT": {
 		"IP": "192.168.20.219",
 		"DB_Number": "2"
 	},

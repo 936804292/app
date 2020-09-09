@@ -1,0 +1,7 @@
+2020-09-09 09:12:21,921 - app.py[line:58] - WARNING: Basic256Sha256_SignAndEncrypt
+2020-09-09 09:12:23,114 - binary_server_asyncio.py[line:125] - WARNING: Listening on 0.0.0.0:48411
+2020-09-09 09:12:23,114 - app.py[line:69] - WARNING: --------------------OpcUA server started!--------------------------
+2020-09-09 09:12:23,871 - common.py[line:64] - ERROR: b' TCP : Unreachable peer'
+2020-09-09 09:12:23,871 - app.py[line:75] - ERROR: b' TCP : Unreachable peer'
+2020-09-09 09:12:23,871 - app.py[line:77] - WARNING: -----------
+2020-09-09 09:12:23,882 - common.py[line:64] - ERROR: b' ISO : An error occurred during send TCP : Connection timed out'

@@ -29,9 +29,7 @@ def set_log():
     logger.addHandler(file_handle)
     return logger
 
-
-if __name__ == "__main__":
-
+def run():
     config_dir, config_file, result = get_config_arr()
 
     security_dir = os.path.dirname(os.getcwd() + '/security/')
@@ -41,8 +39,8 @@ if __name__ == "__main__":
 
     endpoint = result['OPCUA_SERVER']['EndPoint']
     uri = result['OPCUA_SERVER']['uri']
-    PLC_IP = result['S7PLC']['IP']
-    PLC_DBNumber = int(result['S7PLC']['DB_Number'])
+    PLC_IP = result['OPCDA_CLIENT']['IP']
+    PLC_DBNumber = int(result['OPCDA_CLIENT']['DB_Number'])
     security_num = int(result['security']['security_num'])
 
     my_cert_dir = result['security']['certificate']
@@ -68,7 +66,7 @@ if __name__ == "__main__":
     serverObj = myua.add_serverName(json_res)
     tagNodeObj = myua.add_tagName(s_tags, serverObj)
     myua.server.start()
-    logger.warning('OpcUA server started!')
+    logger.warning('--------------------OpcUA server started!--------------------------')
 
     db = DBObject()
     try:
@@ -89,7 +87,11 @@ if __name__ == "__main__":
     finally:
         if db.client.get_connected():
             db.client.disconnect()
-            logger.warning('OpcDA server connection has been disconnected;')
+            logger.warning('OpcDA client has been disconnected;')
 
             myua.server.stop()
-            logger.warning('OpcUA server connection has been disconnected;')
+            logger.warning('OpcUA server has been disconnected;')
+
+
+if __name__ == "__main__":
+    run()

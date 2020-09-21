@@ -8,8 +8,15 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ```
 ---
 ## .
-### Set project configuration
-| ./config/config.json |
+### Set Project Configuration
+``` shell script
+'config:'
+vim ./config/config.json
+'node:'
+vim ./config/data.json
+'build docker image:'
+docker build kezhi/da2ua:v1 .
+```
 ---
 ## Start the project
 ```python

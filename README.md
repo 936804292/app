@@ -7,10 +7,11 @@ openssl req -x509 -newkey rsa:2048 -keyout kz_private_key.pem -out kz_cert.pem -
 openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ```
 ---
-## ./config/config.json
-'set your project config'
+## .
+### Set project configuration
+&#124 ./config/config.json
 ---
-## start the project
+## Start the project
 ```python
 python3 app.py
 ```

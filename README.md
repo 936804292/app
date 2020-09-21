@@ -11,9 +11,9 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ``` shell script
 Config:
 vim ./config/config.json
-'Node:'
+Node:
 vim ./config/data0.json
-'Build docker image:'
+Build docker image:
 docker build kezhi/da2ua:v1 .
 ```
 ---

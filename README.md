@@ -1,4 +1,4 @@
-`Kezhi OpcUA Server`
+# Kezhi OpcUA Server
 ---
 ## install of CA	
 ```shell script
@@ -16,4 +16,7 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 }
 ```
 
-
+## start
+```python
+python3 app.py
+```

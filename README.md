@@ -14,7 +14,7 @@ vim ./config/config.json
 Node:
 vim ./config/data0.json
 Build docker image:
-docker build kezhi/da2ua:v1 .
+docker build -t kezhi/da2ua:v1 .
 ```
 ---
 ## Start the Project

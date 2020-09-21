@@ -7,18 +7,17 @@ openssl req -x509 -newkey rsa:2048 -keyout kz_private_key.pem -out kz_cert.pem -
 openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ```
 ---
-## .
-### Set Project Configuration
+## Set Project Configuration
 ``` shell script
-'config:'
+Config:
 vim ./config/config.json
-'node:'
-vim ./config/data.json
-'build docker image:'
+'Node:'
+vim ./config/data0.json
+'Build docker image:'
 docker build kezhi/da2ua:v1 .
 ```
 ---
-## Start the project
+## Start the Project
 ```python
 python3 app.py
 ```

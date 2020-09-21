@@ -9,7 +9,7 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ---
 ## .
 ### Set project configuration
-&#124 ./config/config.json
+| ./config/config.json |
 ---
 ## Start the project
 ```python

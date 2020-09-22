@@ -11,13 +11,20 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 ``` shell script
 Config:
 vim ./config/config.json
+
 Node:
 vim ./config/data0.json
-Build docker image:
-docker build -t kezhi/da2ua:v1 .
+
+Build docker image(there are two ways)
+
+(1)docker build -t kezhi/da2ua:v1 .
+
+(2)docker pull laoweisir/kezhi:latest
+   docker build -t kezhi/da2ua:v1 .
 ```
 ---
 ## Start the Project
+
 ```python
 python3 app.py
 ```

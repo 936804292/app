@@ -12,10 +12,10 @@ openssl x509 -outform der -in kz_cert.pem -out kz_cert.der
 Config:
 vim ./config/config.json
 
-Node:
+Node:节点是根据json数据格式设置的，需要事先知道DB模块的字段，然后写入json文件中。
 vim ./config/data0.json
 
-Build docker image(there are two ways)
+Build docker image:第二种image小，layer层少，比较精简，之前我配置ok的，建议用第二种;
 
 (1)docker build -t kezhi/da2ua:v1 .
 

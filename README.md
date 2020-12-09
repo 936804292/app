@@ -5,7 +5,6 @@
 ```shell script
 pip install -r requirements.txt
 ```
----
 ## Signature Certificate	
 ```shell script
 openssl req -x509 -newkey rsa:2048 -keyout kz_private_key.pem -out kz_cert.pem -days 355 -nodes -config ssl.conf
